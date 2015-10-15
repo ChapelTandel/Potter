@@ -1,0 +1,13 @@
+c:\users\ctandel\documents\visual studio 2015\Projects\Potter\Potter\bin\Debug\Potter.dll
+c:\users\ctandel\documents\visual studio 2015\Projects\Potter\Potter\bin\Debug\Potter.pdb
+c:\users\ctandel\documents\visual studio 2015\Projects\Potter\Potter\bin\Debug\nunit.framework.dll
+c:\users\ctandel\documents\visual studio 2015\Projects\Potter\Potter\bin\Debug\nunit.framework.xml
+c:\users\ctandel\documents\visual studio 2015\Projects\Potter\Potter\obj\Debug\Potter.csprojResolveAssemblyReference.cache
+c:\users\ctandel\documents\visual studio 2015\Projects\Potter\Potter\obj\Debug\Potter.dll
+c:\users\ctandel\documents\visual studio 2015\Projects\Potter\Potter\obj\Debug\Potter.pdb
+C:\Users\Ctandel\Documents\Visual Studio 2015\Projects\Potter\Potter\bin\Debug\FluentAssertions.Core.dll
+C:\Users\Ctandel\Documents\Visual Studio 2015\Projects\Potter\Potter\bin\Debug\FluentAssertions.dll
+C:\Users\Ctandel\Documents\Visual Studio 2015\Projects\Potter\Potter\bin\Debug\FluentAssertions.pdb
+C:\Users\Ctandel\Documents\Visual Studio 2015\Projects\Potter\Potter\bin\Debug\FluentAssertions.xml
+C:\Users\Ctandel\Documents\Visual Studio 2015\Projects\Potter\Potter\bin\Debug\FluentAssertions.Core.pdb
+C:\Users\Ctandel\Documents\Visual Studio 2015\Projects\Potter\Potter\bin\Debug\FluentAssertions.Core.xml
