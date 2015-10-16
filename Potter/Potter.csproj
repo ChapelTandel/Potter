@@ -54,7 +54,9 @@
   <ItemGroup>
     <Compile Include="BookCounter.cs" />
     <Compile Include="BookTitle.cs" />
+    <Compile Include="DiscountCalculator.cs" />
     <Compile Include="PotterCalculator.cs" />
+    <Compile Include="PriceCalculator.cs" />
     <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

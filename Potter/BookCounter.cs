@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Given_A_PotterCalculator
 {
@@ -11,7 +10,7 @@ namespace Given_A_PotterCalculator
         public int FifthBookCount { get; set; }
         public int FourthBookCount { get; set; }
 
-        public void CountIndividualBooks(List<BookTitle> books)
+        public BookCounter(List<BookTitle> books)
         {
             foreach (var book in books)
             {
@@ -59,6 +58,11 @@ namespace Given_A_PotterCalculator
             if (bookCounter.FifthBookCount > 0) count++;
 
             return count;
+        }
+
+        public int GetNumberOfDuplicateBooks(BookCounter bookCounter)
+        {
+            return GetCountOfTotalBooks(bookCounter) - GetNumberOfUniqueBooks(bookCounter);
         }
     }
 }
