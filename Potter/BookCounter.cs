@@ -1,22 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Given_A_PotterCalculator
 {
     internal class BookCounter
     {
-        public int FirstBookCount { get; set; }
-        public int SecondBookCount { get; set; }
-        public int ThirdBookCount { get; set; }
-        public int FifthBookCount { get; set; }
-        public int FourthBookCount { get; set; }
-
-        public BookCounter(List<BookTitle> books)
+        public BookCounter(IEnumerable<BookTitle> books)
         {
             foreach (var book in books)
             {
                 AddCount(book);
             }
         }
+
+        public int FirstBookCount { get; set; }
+        public int SecondBookCount { get; set; }
+        public int ThirdBookCount { get; set; }
+        public int FifthBookCount { get; set; }
+        public int FourthBookCount { get; set; }
 
         private void AddCount(BookTitle title)
         {
@@ -34,9 +35,11 @@ namespace Given_A_PotterCalculator
                 case (BookTitle.TitleFour):
                     FourthBookCount++;
                     break;
-                default:
+                case (BookTitle.TitleFive):
                     FifthBookCount++;
                     break;
+                default:
+                    throw new Exception("Incorrect book title");
             }
         }
 

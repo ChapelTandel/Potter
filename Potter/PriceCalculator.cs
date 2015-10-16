@@ -22,7 +22,7 @@ namespace Given_A_PotterCalculator
 
         public decimal GetPriceOfDuplicateBooks(int numberOfDuplicateBooks)
         {
-            return numberOfDuplicateBooks * 8M;
+            return numberOfDuplicateBooks*8M;
         }
     }
 }
