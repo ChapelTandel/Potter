@@ -7,8 +7,8 @@ namespace Given_A_PotterCalculator
         public decimal Calculate(List<BookTitle> books)
         {
             var bookCounter = new BookCounter(books);
-            var numberOfUniqueBooks = bookCounter.GetNumberOfUniqueBooks(bookCounter);
-            var numberOfDuplicateBooks = bookCounter.GetNumberOfDuplicateBooks(bookCounter);
+            var numberOfUniqueBooks = bookCounter.GetNumberOfUniqueBooks();
+            var numberOfDuplicateBooks = bookCounter.GetNumberOfDuplicateBooks();
 
             var priceCounter = new PriceCalculator();
             var priceOfUniqueBooks = priceCounter.GetPriceOfUniqueBooks(numberOfUniqueBooks);

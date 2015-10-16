@@ -7,6 +7,8 @@ namespace Given_A_PotterCalculator
     {
         public BookCounter(IEnumerable<BookTitle> books)
         {
+            var bookCahceLsit = new List<BookCache>();
+
             foreach (var book in books)
             {
                 AddCount(book);
@@ -18,6 +20,7 @@ namespace Given_A_PotterCalculator
         public int ThirdBookCount { get; set; }
         public int FifthBookCount { get; set; }
         public int FourthBookCount { get; set; }
+
 
         private void AddCount(BookTitle title)
         {
@@ -44,28 +47,37 @@ namespace Given_A_PotterCalculator
         }
 
 
-        public int GetCountOfTotalBooks(BookCounter bookCounter)
+        public int GetCountOfTotalBooks()
         {
-            return bookCounter.FirstBookCount + bookCounter.SecondBookCount + bookCounter.ThirdBookCount +
-                   bookCounter.FourthBookCount + bookCounter.FifthBookCount;
+            return FirstBookCount
+                   + SecondBookCount
+                   + ThirdBookCount
+                   + FourthBookCount
+                   + FifthBookCount;
         }
 
-        public int GetNumberOfUniqueBooks(BookCounter bookCounter)
+        public int GetNumberOfUniqueBooks()
         {
             var count = 0;
 
-            if (bookCounter.FirstBookCount > 0) count++;
-            if (bookCounter.SecondBookCount > 0) count++;
-            if (bookCounter.ThirdBookCount > 0) count++;
-            if (bookCounter.FourthBookCount > 0) count++;
-            if (bookCounter.FifthBookCount > 0) count++;
+            if (FirstBookCount > 0) count++;
+            if (SecondBookCount > 0) count++;
+            if (ThirdBookCount > 0) count++;
+            if (FourthBookCount > 0) count++;
+            if (FifthBookCount > 0) count++;
 
             return count;
         }
 
-        public int GetNumberOfDuplicateBooks(BookCounter bookCounter)
+        public int GetNumberOfDuplicateBooks()
         {
-            return GetCountOfTotalBooks(bookCounter) - GetNumberOfUniqueBooks(bookCounter);
+            return GetCountOfTotalBooks() - GetNumberOfUniqueBooks();
         }
+    }
+
+    internal class BookCache
+    {
+        public BookTitle Title { get; set; }
+        public int Quantity { get; set; }
     }
 }

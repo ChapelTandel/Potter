@@ -93,8 +93,8 @@ namespace Given_A_PotterCalculator
                 firstBookTitle,
                 secondBookTitle,
                 thirdBookTitle,
-                BookTitle.TitleFour,
-                BookTitle.TitleFive
+                fourthBookTitle,
+                fifthBookTitle
             };
 
             Assert.That(potterCalculator.Calculate(bookList), Is.EqualTo(30M));
